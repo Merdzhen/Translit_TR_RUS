@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Regular"), 
+  url("fonts/OpenSans-Regular.woff2") format("woff2"),
+  url("fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("MullerRegular"), 
+  url("fonts/MullerRegular.woff2") format("woff2"),
+  url("fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.flex {
+  display: flex;
+}
+
+main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+form {
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  background-color: rgb(76, 143, 197);
+  border: 1px solid  rgb(49, 61, 88);
+  border-radius: 5px;
+  max-width: 350px;
+  margin: 24px auto;
+}
+
+#input-form {
+  border: 1px solid rgb(60, 60, 243);
+  border-radius: 5px;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  color:rgb(46, 46, 129);
+}
+
+.btn {
+  margin: 0;
+  cursor: pointer;
+  background-color: rgb(146, 207, 235);
+  border: 1px solid rgb(60, 60, 243);
+  border-radius: 5px;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  color:rgb(46, 46, 129);
+}
+
+.change-btn {
+  margin-bottom: 12px;
+}
+
+.vocabulary {
+  font-family: "Muller", sans-serif;
+  justify-content: center;
+}
+
+.vocabulary-item {
+  min-height: 200px;
+  width: 600px;
+  background-color: rgb(149, 204, 229);
+  border: 1px solid rgb(49, 61, 88);
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px
+}
+
+.vocabulary-item * {
+  padding: 0;
+  margin: 0;
+  color:rgb(46, 46, 129);
+}
+
+.vocabulary-item *:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .vocabulary-item {
+    width: 450px;
+  }
+}
+
+@media (max-width: 767px) {
+  .vocabulary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vocabulary-item {
+    width: 400px;
+  }
+}
