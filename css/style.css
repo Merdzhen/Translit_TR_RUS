@@ -18,6 +18,11 @@
   font-display: swap;
 }
 
+body {
+  position: relative;
+  height: 100%;
+}
+
 .flex {
   display: flex;
 }
@@ -26,7 +31,7 @@ main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 20px 54px;
 }
 
 form {
@@ -36,8 +41,13 @@ form {
   background-color: rgb(76, 143, 197);
   border: 1px solid  rgb(49, 61, 88);
   border-radius: 5px;
-  max-width: 350px;
+  max-width: 380px;
   margin: 24px auto;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
 }
 
 #input-form {
@@ -88,6 +98,22 @@ form {
   margin-bottom: 5px;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  height: 32px;
+}
+
+.footer-text {
+  margin: 8px auto;
+  text-align: center;
+  font-family: "Muller", sans-serif;
+  color:rgb(91, 91, 121);
+}
+
+
 @media (min-width: 768px) and (max-width: 1400px) {
   .vocabulary-item {
     width: 450px;
@@ -101,6 +127,6 @@ form {
   }
 
   .vocabulary-item {
-    width: 400px;
+    width: 380px;
   }
 }
