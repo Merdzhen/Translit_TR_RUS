@@ -38,7 +38,7 @@ addBtn.addEventListener('click', event => {
     p: "п",
     r: "р",
     s: "с",
-    ş: "щ",
+    ş: "ш",
     t: "т",
     u: "у",
     ü: "ю",
