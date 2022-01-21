@@ -16,6 +16,37 @@ addBtn.addEventListener('click', event => {
 
   //right side
   let trRus = {
+    A: "А",
+    B: "Б",
+    C: "Дж",
+    Ç: "Ч",
+    D: "Д",
+    E: "Е",
+    F: "Ф",
+    G: "Г",
+    Ğ: "",
+    H: "Х",
+    I: "Ы",
+    İ: "И",
+    J: "Ж",
+    K: "К",
+    L: "Л",
+    M: "М",
+    N: "Н",
+    O: "О",
+    Ö: "О",
+    P: "П",
+    R: "Р",
+    S: "С",
+    Ş: "Ш",
+    T: "Т",
+    U: "У",
+    Ü: "Ю",
+    V: "В",
+    Y: "Й",
+    Z: "З",
+    W: "В",
+    Q: "Кв",
     a: "а",
     b: "б",
     c: "дж",
@@ -52,10 +83,8 @@ addBtn.addEventListener('click', event => {
   const translit = (str) => {
     let result ="";
     for (let i = 0; i < str.length; i++) {
-      if (str[i] === str[i].toLowerCase() && str[i].toLowerCase() in trRus) {
+      if (str[i] in trRus) {
         result += trRus[str[i]];
-      } else if (str[i] === str[i].toUpperCase() && str[i].toLowerCase() in trRus) {
-        result += trRus[str[i].toLowerCase()].toUpperCase();
       } else {
         result += str[i];
       }
