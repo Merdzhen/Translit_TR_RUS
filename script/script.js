@@ -45,6 +45,8 @@ addBtn.addEventListener('click', event => {
     v: "в",
     y: "й",
     z: "з",
+    w: "в",
+    q: "кв",
   };
 
   const translit = (str) => {
